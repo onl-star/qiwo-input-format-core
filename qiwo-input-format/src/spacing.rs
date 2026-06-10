@@ -5,10 +5,11 @@ pub(crate) fn format_internal(commit_text: &str) -> String {
     let mut previous = None;
 
     for current in commit_text.chars() {
-        if let Some(left) = previous {
-            if need_space_between(left, current) && !output.ends_with(char::is_whitespace) {
-                output.push(' ');
-            }
+        if let Some(left) = previous
+            && need_space_between(left, current)
+            && !output.ends_with(char::is_whitespace)
+        {
+            output.push(' ');
         }
 
         output.push(current);
@@ -29,20 +30,18 @@ pub(crate) fn format_with_context(
         return output;
     }
 
-    if let Some(before) = before_cursor {
-        if let (Some(left), Some(right)) = (before.chars().next_back(), output.chars().next()) {
-            if need_space_between(left, right) {
-                output.insert(0, ' ');
-            }
-        }
+    if let Some(before) = before_cursor
+        && let (Some(left), Some(right)) = (before.chars().next_back(), output.chars().next())
+        && need_space_between(left, right)
+    {
+        output.insert(0, ' ');
     }
 
-    if let Some(after) = after_cursor {
-        if let (Some(left), Some(right)) = (output.chars().next_back(), after.chars().next()) {
-            if need_space_between(left, right) {
-                output.push(' ');
-            }
-        }
+    if let Some(after) = after_cursor
+        && let (Some(left), Some(right)) = (output.chars().next_back(), after.chars().next())
+        && need_space_between(left, right)
+    {
+        output.push(' ');
     }
 
     output
