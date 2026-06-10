@@ -1,4 +1,4 @@
-use qiwo_input_format::{format_commit_text, CommitContext, FormatOptions};
+use qiwo_input_format::{CommitContext, FormatOptions, format_commit_text};
 
 fn enabled(commit_text: &str) -> String {
     format_commit_text(

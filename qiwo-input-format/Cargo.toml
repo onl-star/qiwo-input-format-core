@@ -9,4 +9,4 @@ name = "qiwo_input_format"
 crate-type = ["lib", "cdylib"]
 
 [dependencies]
-
+jni = { version = "0.21", default-features = false }

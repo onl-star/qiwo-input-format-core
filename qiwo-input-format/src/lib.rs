@@ -1,7 +1,13 @@
 //! Shared commit-text formatter for Qiwo frontends.
 
 mod char_class;
+pub mod ffi;
+pub mod jni_bridge;
 mod spacing;
+
+pub use ffi::{
+    QiwoInputFormatOptions, qiwo_input_format_commit_text, qiwo_input_format_free_string,
+};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct FormatOptions {
