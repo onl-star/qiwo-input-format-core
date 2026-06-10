@@ -1,0 +1,22 @@
+{"commit_text":"中文ABC123测试","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"中文 ABC123 测试"}
+{"commit_text":"中文ABC123测试","before_cursor":null,"after_cursor":null,"enabled":false,"expected":"中文ABC123测试"}
+{"commit_text":"中文abc","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"中文 abc"}
+{"commit_text":"abc中文","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"abc 中文"}
+{"commit_text":"中文123","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"中文 123"}
+{"commit_text":"123中文","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"123 中文"}
+{"commit_text":"中文 abc","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"中文 abc"}
+{"commit_text":"ABC123","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"ABC123"}
+{"commit_text":"v1","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"v1"}
+{"commit_text":",中文测试,","before_cursor":null,"after_cursor":null,"enabled":true,"expected":", 中文测试,"}
+{"commit_text":":中文","before_cursor":null,"after_cursor":null,"enabled":true,"expected":": 中文"}
+{"commit_text":"中文,","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"中文,"}
+{"commit_text":"あ中文","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"あ中文"}
+{"commit_text":"한中文","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"한中文"}
+{"commit_text":"😀中文","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"😀中文"}
+{"commit_text":"Ａ中文","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"Ａ中文"}
+{"commit_text":"中文Ａ","before_cursor":null,"after_cursor":null,"enabled":true,"expected":"中文Ａ"}
+{"commit_text":"中文","before_cursor":"abc","after_cursor":null,"enabled":true,"expected":" 中文"}
+{"commit_text":"abc","before_cursor":"中文","after_cursor":null,"enabled":true,"expected":" abc"}
+{"commit_text":"中文","before_cursor":",","after_cursor":"123","enabled":true,"expected":" 中文 "}
+{"commit_text":",","before_cursor":null,"after_cursor":"中文","enabled":true,"expected":", "}
+{"commit_text":"","before_cursor":null,"after_cursor":"abc","enabled":true,"expected":""}
