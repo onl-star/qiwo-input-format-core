@@ -1,0 +1,4 @@
+[workspace]
+members = ["qiwo-input-format"]
+resolver = "2"
+

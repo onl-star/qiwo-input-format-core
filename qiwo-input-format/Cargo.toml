@@ -1,0 +1,12 @@
+[package]
+name = "qiwo-input-format"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[lib]
+name = "qiwo_input_format"
+crate-type = ["lib", "cdylib"]
+
+[dependencies]
+
